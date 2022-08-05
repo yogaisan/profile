@@ -1,118 +1,271 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@400;700&display=swap');
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Poppins:300,400,500,700");
-
 body {
-  background-color: aliceblue;
-  font-family: 'Open Sans', sans-serif;
-  color: rgb(80, 80, 80);
-  line-height: 1.6;
-  margin: 0
-}
-
-h1, h2, h3 {
-  font-family: 'Poppins';
-  color: rgb(80, 80, 80);
-}
-
-h1 {
-  font-size: 32px;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(90deg, rgb(131, 58, 180) 0%, rgb(253, 29, 29) 50%, rgb(252, 176, 69) 100%);
+  font-family: cursive;
 }
 
 h2 {
-  font-size: 22px;
-  color: rgb(0, 200, 0)
+  font-size: 2.5rem;
 }
 
-p {
-  font-size: 18px;
+.navbar {
+  background: rgba(74, 219, 74, 0);
+  min-height: 100px;
 }
 
-a {
-  color: rgba(0, 0, 150, 0.7);
+.CV {
+  margin-top: 40px;
+  margin-right: 40px;
+  color: rgb(10, 9, 10);
+  opacity: 0.7;
+}
+
+.CV:hover {
   text-decoration: none;
-  font-size: 16px;
+  transition: all 0.2s ease-out;
+  color: rgb(240, 228, 228);
+  opacity: 1;
 }
 
-a:hover {
-  color: rgb(13, 13, 14, 1);
+hr {
+  background-color: rgba(221, 186, 186, 0.432);
+  border: 0 none;
+  color: rgb(212, 44, 44);
+  height: 12px;
+  width: 70%;
 }
 
-#avatar{
-    width: 100px;
-    border-radius: 50%;
-    height: 100px;
-}
-
-.container {
-  width: 700px;
+.description {
+  width: 70%;
   margin: 0 auto;
+  margin-top: 100px;
 }
-
-.card {
-  background-color: #fff;
-  margin: 20px 0px;
-  padding: 40px 20px;
-  border-radius: 8px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+.description h1 {
+  color: rgb(0, 0, 0);
+  font-size: 3.5rem;
+  font-weight: bolder;
   text-align: center;
-  position: relative;
+}
+.description p {
+  font-size: 1.1rem;
+  font-weight: lighter;
+  color: hsl(0deg, 0%, 10%);
+  margin-bottom: 40px;
+  text-align: center;
 }
 
-li{
-    list-style: none;
-    display: inline;
-}
-
-#smiley i {
-  background-color: rgb(235, 235, 25);
+.profile-image {
+  width: 75px;
+  height: 75px;
+  border: 2px solid rgb(221, 216, 216);
   border-radius: 50%;
+  margin-left: 40px;
+  margin-top: 40px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(rgba(29, 28, 28, 0.4), rgba(0, 0, 0, 0.4));
+  zoom: 120%;
 }
 
-.social-link {
-  font-size: 60px;
-  padding: 10px;
+.tech-stack {
+  width: 70%;
+  margin: 50px auto;
+}
+.tech-stack .tech-image {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid rgb(250, 250, 250);
+  border-radius: 10px;
+  padding: 20px;
 }
 
-.btn {
-  color:  white;
-  padding: 10px 20px;
-  background-color: lightblue;
-  font-weight: 900;
+.projects {
+  width: 70%;
+  margin: 50px auto;
+}
+.projects .cards {
+  display: flex;
+}
+.projects .card {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  border-radius: 10px;
+  width: 40%;
+  margin: 0 auto;
+  transition: all 0.5s ease-in-out;
+}
+.projects .card-image {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+}
+.projects .card:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+.projects .project-description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 20px;
+  background: rgba(63, 131, 255, 0.596);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.projects h4 {
+  font-size: 1.1rem;
+  margin-top: 7px;
+}
+.projects i {
+  font-size: 0.7rem;
+}
+
+.btn-medium {
+  color: #312b2b;
+  font-weight: lighter;
+  opacity: 0.8;
+}
+.btn-medium:hover {
+  opacity: 1;
   text-decoration: none;
-  border-radius: 6px;
+  color: #000000;
+  font-weight: bold;
 }
 
-.btn:hover {
-  background-color: darkslateblue;
+.about {
+  width: 70%;
+  margin: 50px auto;
+  text-align: justify;
 }
 
-ul{
-  padding: 0;
+.about h4 {
+  font-weight: 400;
 }
 
-.arrow-right {
-  width: 0;
-  height: 0;
-  border-top: 40px solid transparent;
-  border-bottom: 40px solid transparent;
-  border-left: 50px solid aliceblue;
-  position: absolute;
-  left: 0;
-  top: 35px;
+.hobbies {
+  width: 70%;
+  margin: 50px auto;
 }
 
-@media (max-width: 960px) {
-  .container {
-    width: 700px;
+.hobbies h4 {
+  font-weight: 400;
+}
+
+.hobbies ul {
+  margin-bottom: 45px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 125px;
+  padding: 0px 50px;
+  color: rgba(189, 201, 201, 0.4);
+  background: rgb(63, 94, 251);
+  background: radial-gradient(circle, rgba(63, 94, 251, 0.2) 0%, rgba(252, 70, 107, 0.2) 100%);
+}
+.footer .fa-heart {
+  color: #ff0000;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: black;
+  opacity: 0.5;
+  text-decoration: none;
+  font-size: 32px;
+  padding: 0px 10px;
+}
+.footer-links a:hover {
+  opacity: 1;
+}
+
+@media (min-width: 100px) and (max-width: 775px) {
+  .profile-image {
+    width: 55px;
+    height: 55px;
+    margin-left: 10px;
+    margin-top: 20px;
+    zoom: 100%;
+  }
+  .CV {
+    margin-top: 35px;
+    margin-right: 10px;
+  }
+  .CV h3 {
+    font-size: 1.4rem;
+  }
+  .description {
+    margin-top: 50px;
+  }
+  .description h1 {
+    font-size: 1.4rem;
+  }
+  .description span {
+    font-size: 0.8rem;
+    text-align: justify;
+  }
+  .header h2 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .projects .cards {
+    display: block;
+  }
+  .projects .card {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .project-description {
+    height: 10px !important;
+  }
+  .project-description h4 {
+    font-size: 0.6rem;
+    margin-top: 5.8px;
+  }
+  .project-description a {
+    font-size: 0.5rem;
+    margin-top: 1px;
+  }
+  .project-description i {
+    font-size: 0.4rem;
+  }
+  .about h4 {
+    font-size: 1rem;
+  }
+  .hobbies h4 {
+    font-size: 1rem;
+  }
+  .footer {
+    height: 75px;
+  }
+  .footer .footer-links {
+    margin-bottom: 0;
+  }
+  .footer .footer-links i {
+    font-size: 1.2rem;
+  }
+  .footer .footer-copyright {
+    font-size: 0.7rem;
+    text-align: center;
   }
 }
-@media (max-width: 720px) {
-  .container {
-    width: 500px;
+@media (min-width: 775px) and (max-width: 1024px) {
+  .projects .cards {
+    display: block;
   }
-}
-@media (max-width: 540px) {
-  .container {
-    width: 300px;
+  .projects .card {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .header h2 {
+    text-align: center;
   }
 }
